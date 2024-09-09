@@ -1,0 +1,23 @@
+---
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<main
+  class='bg-[#faf5e9] w-[89vw] flex flex-col items-center m-auto p-8 gap-6 min-h-[85vh]'
+>
+  <h2 transition:name={"section-title-"+title} class='text-6xl font-bold'>{title}</h2>
+  <div class='h-[0.1px] w-full bg-gray-400'></div>
+  <slot />
+</main>
+
+<style>
+  h2 {
+    background: -webkit-linear-gradient(#c6a382 20%, #432d1e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>

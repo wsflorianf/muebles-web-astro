@@ -1,0 +1,26 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getIds } from "@/utils/getIds";
+import data from '@/data/bedroom-data'
+import type { ProductTypes } from "@/types/data";
+import Product from "@/components/Product.astro";
+
+const params = Astro.params
+
+export function getStaticPaths ()  {  
+    return getIds(data.products);
+}
+
+let product: ProductTypes
+let foundProduct = data.products.find(product=>product.id == params?.id)
+
+if(foundProduct){
+    product = foundProduct
+}else{
+    product = {id: 0, name: 'Product', description: 'Description', images: []}
+}
+---
+<Layout title={product.name} noTransitions>
+    <Product product={product} path={data.path} >
+    
+</Layout>

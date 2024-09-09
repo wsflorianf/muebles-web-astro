@@ -1,0 +1,15 @@
+---
+const baseUrl = import.meta.env.BASE_URL
+---
+
+<div class="group fixed bottom-3 right-3 cursor-pointer">
+    <button data-tooltip-target="tooltip-whatsapp" data-tooltip-placement="left" class="rounded-full group-hover:bg-black group-hover:bg-opacity-20 group-hover:shadow duration-300 overflow-clip h-24 w-24 p-2 m-1">
+        <img class="h-auto" src=`${baseUrl}/whatsapp-icon.svg` alt="Icono de Whatsapp">
+    </button>
+  </div>
+</div>
+
+<div id="tooltip-whatsapp" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+  ¡Escribenos!
+  <div class="tooltip-arrow" data-popper-arrow/>
+</div>

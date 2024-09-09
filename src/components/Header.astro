@@ -1,11 +1,14 @@
 ---
+const baseUrl = import.meta.env.BASE_URL
 ---
 
-<header class="bg-[#644b36] h-28 flex py-4 px-8 gap-6 ">
-    <img class="h-auto aspect-square transition-all duration-[1s]" src="/bar-icon.svg" alt="Logo Muebles WF"/>
-    <a class="text-white self-center text-4xl" href="/">Muebles WF</a>
+<header class="bg-[#644b36] h-[15vh] flex py-3 px-8 gap-6 ">
+    <img class="h-auto aspect-square transition-all duration-[1s]" src=`${baseUrl}/bar-icon.svg` alt="Logo Muebles WF"/>
+    <a class="text-white self-center text-5xl" href={baseUrl}>Muebles WF</a>
 </header>
 
 <style>
-    
+    img:hover{
+        transform: rotateY(360deg);
+    }
 </style>

@@ -1,0 +1,15 @@
+---
+import Products from '@/components/Products.astro'
+import Layout from '@/layouts/Layout.astro'
+import Section from '@/layouts/Section.astro'
+import data from '@/data/other-data'
+
+const baseUrl = import.meta.env.BASE_URL
+---
+
+<Layout title='Otros'>
+  <Section title='Otros' >
+    <Products data={data} section='other'/>
+        <a href={baseUrl}>Volver</a>
+  </Section>
+</Layout>

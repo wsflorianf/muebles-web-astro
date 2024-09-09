@@ -1,9 +1,13 @@
 ---
+import Section from "@/layouts/Section.astro";
 import Layout from "../layouts/Layout.astro";
 
+const baseUrl = import.meta.env.BASE_URL
 ---
 
 <Layout title="Otro">
-    <h1 class="text-8xl">Hola pana, estás en otro</h1>
-    <a href="/">Volver</a>
+    <Section title="Saludo">
+        <h1 class="text-8xl">Hola pana, estás en otro</h1>
+        <a href={baseUrl}>Volver</a>
+    </Section>
 </Layout>

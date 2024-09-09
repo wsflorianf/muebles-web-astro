@@ -1,0 +1,15 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Section from '@/layouts/Section.astro'
+import data from '@/data/office-data'
+import Products from '@/components/Products.astro'
+
+const baseUrl = import.meta.env.BASE_URL
+---
+
+<Layout title='Oficinas'>
+  <Section title='Oficinas' >
+    <Products data={data} section='office'/>
+        <a href={baseUrl}>Volver</a>
+  </Section>
+</Layout>
