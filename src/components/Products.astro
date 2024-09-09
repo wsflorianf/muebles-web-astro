@@ -8,13 +8,12 @@ interface Props {
 
 const { data, section } = Astro.props
 const baseUrl = import.meta.env.BASE_URL
-
 ---
 
 <div class="flex flex-wrap gap-5 justify-center">
   {
     data.products.map((product) => (
-      <a href={section+'/'+product. id} class="bg-white h-[420px] rounded-2xl overflow-hidden inline-block whitespace-nowrap cursor-pointer hover:scale-105 duration-200 shadow-md">
+      <a href={`${baseUrl}/${section}/${product.id}`} class="bg-white h-[420px] rounded-2xl overflow-hidden inline-block whitespace-nowrap cursor-pointer hover:scale-105 duration-200 shadow-md">
         <img loading="lazy" class="h-[85%] w-auto m-auto" src={baseUrl + data.path + product.images[0]} alt='' />
         <h4 class="flex justify-center items-center h-[15%] text-center font-bold text-xl text-wrap px-2">{product.name}</h4>
       </a>
