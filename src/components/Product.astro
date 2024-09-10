@@ -14,7 +14,6 @@ const baseUrl = import.meta.env.BASE_URL
 
 <div class="h-[85vh] max-sm:h-auto p-10 max-sm:p-6 flex max-sm:flex-col-reverse gap-[30px]">
   <div class="flex flex-col w-full h-full flex-[5] max-sm:h-80 gap-2">
-  
   <div
     id='default-carousel'
     class='relative w-full h-full max-sm:h-80 shadow-md border border-gray-200 rounded-xl'
@@ -60,7 +59,7 @@ const baseUrl = import.meta.env.BASE_URL
     <!-- Slider controls -->
     <button
       type='button'
-      class='absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-10 max-sm:left-6 z-30 px-4 cursor-pointer group focus:outline-none'
+      class:list={['absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-10 max-sm:left-6 z-30 px-4 cursor-pointer group focus:outline-none', product.images.length!==1 || 'hidden']}
       data-carousel-prev
     >
       <span
@@ -85,7 +84,7 @@ const baseUrl = import.meta.env.BASE_URL
     </button>
     <button
       type='button'
-      class='absolute translate-x-1/2 -translate-y-1/2 top-1/2 right-10 max-sm:right-6 z-30 items-center justify-center px-4 cursor-pointer group focus:outline-none'
+      class:list={['absolute translate-x-1/2 -translate-y-1/2 top-1/2 right-10 max-sm:right-6 z-30 items-center justify-center px-4 cursor-pointer group focus:outline-none',  product.images.length!==1 || 'hidden']}
       data-carousel-next
     >
       <span
