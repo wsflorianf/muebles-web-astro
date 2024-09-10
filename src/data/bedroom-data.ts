@@ -30,8 +30,8 @@ const bedroomData = {
       },
       {
         id: 14,
-        name: "producto mesa más largo",
-        description: "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+        name: "Mueble de escritorio flotante con almacenamiento",
+        description: "Escritorio flotante de diseño moderno, suspendido sobre un mueble de almacenamiento con puertas blancas. El escritorio, con acabado en madera clara, cuenta con dos cajones para organizar objetos personales. La combinación de materiales y el diseño angular crean un ambiente de trabajo sofisticado y funcional.",
         images: [
           "4-1.jpg",
           "4-2.jpg"
@@ -39,16 +39,16 @@ const bedroomData = {
       },
       {
         id: 15,
-        name: "producto más largo",
-        description: "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+        name: "Mueble de almacenamiento con tres puertas",
+        description: "Mueble de almacenamiento de madera con un diseño sencillo y funcional. Cuenta con tres puertas abatibles que revelan compartimentos interiores con estantes, perfectos para organizar libros, objetos decorativos o cualquier artículo que desees guardar. El mueble está montado sobre ruedas para su fácil translado y presenta un acabado en tonos claros, lo que le otorga un aspecto limpio y moderno.",
         images: [
           "5-1.jpg"
         ]
       },
       {
         id: 16,
-        name: "producto más largo",
-        description: "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+        name: "Armario café",
+        description: "Armario de gran tamaño. El interior cuenta con una barra para colgar ropa y múltiples estantes, ofreciendo un amplio espacio de almacenamiento. El diseño minimalista y el uso de madera le confieren un aspecto elegante y atemporal. Este tipo de armario es ideal para optimizar el espacio en dormitorios y vestidores.",
         images: [
           "6-1.jpg",
           "6-2.jpg",
@@ -58,8 +58,8 @@ const bedroomData = {
       },
       {
         id: 17,
-        name: "producto más largo",
-        description: "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+        name: "Armario con puertas batientes",
+        description: "Armario de gran tamaño con puertas batientes. El interior cuenta con una barra para colgar ropa, estantes superiores y una sección inferior con cajones. Este diseño ofrece un amplio espacio de almacenamiento y organización para ropa, accesorios y otros objetos personales. El mueble está fabricado en madera y presenta un acabado en tonos cálidos, lo que le confiere un aspecto elegante y atemporal.",
         images: [
           "7-1.jpg",
           "7-2.jpg",
@@ -70,16 +70,16 @@ const bedroomData = {
       },
       {
         id: 18,
-        name: "producto más largo",
-        description: "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+        name: "Mueble de pared con espacio para TV y almacenamiento",
+        description: "Mueble de pared de gran tamaño, diseñado para ser el centro de atención de cualquier sala de estar. Cuenta con puertas de madera, cajones y un espacio abierto con una estructura de listones verticales, ideal para colocar un televisor. Este diseño combina funcionalidad y estética, ofreciendo amplio espacio de almacenamiento y un aspecto moderno y elegante.",
         images: [
           "8-1.jpg"
         ]
       },
       {
         id: 19,
-        name: "producto más largo",
-        description: "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+        name: "Armario empotrado con puertas abatibles",
+        description: "Armario empotrado de gran tamaño con dos puertas abatibles. El interior cuenta con múltiples estantes, ofreciendo un amplio espacio de almacenamiento para ropa, accesorios o cualquier otro objeto. El diseño minimalista y el uso de madera le confieren un aspecto elegante y atemporal. Este tipo de armario es ideal para optimizar el espacio en dormitorios y vestidores.",
         images: [
           "9-1.jpg",
           "9-2.jpg"
@@ -87,8 +87,8 @@ const bedroomData = {
       },
       {
         id: 110,
-        name: "producto más largo",
-        description: "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+        name: "Panel Corredizo para Espejo",
+        description: "Panel con correderas para cubrir el espejo dentro de la habitación.",
         images: [
           "10-1.jpg",
           "10-2.jpg",
