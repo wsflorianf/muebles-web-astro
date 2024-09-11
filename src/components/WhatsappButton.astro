@@ -2,14 +2,14 @@
 const baseUrl = import.meta.env.BASE_URL
 ---
 
-<div class="group fixed bottom-3 right-3 cursor-pointer">
-    <a href='https://api.whatsapp.com/send?phone=573028603069&text=Buen%20d%C3%ADa%2C%20me%20gustar%C3%ADa%20mandar%20a%20realizar%20un%20trabajo.%20%F0%9F%98%81' target="_blank" data-tooltip-target="tooltip-whatsapp" data-tooltip-placement="left" class="block rounded-full group-hover:bg-black group-hover:bg-opacity-20 group-hover:shadow duration-300 overflow-clip size-24 max-sm:size-20 p-2 m-1">
+<div class="group z-[999] fixed bottom-3 right-3 cursor-pointer">
+    <a href='https://api.whatsapp.com/send?phone=573028603069&text=Buen%20d%C3%ADa%2C%20me%20gustar%C3%ADa%20mandar%20a%20realizar%20un%20trabajo.%20%F0%9F%98%81' target="_blank" data-tooltip-target="tooltip-whatsapp" data-tooltip-placement="left" class="block rounded-full group-hover:bg-black group-hover:bg-opacity-20 group-hover:shadow duration-300 overflow-clip size-24 max-sm:size-20 max-lg:size-22 p-2 m-1">
         <img class="h-auto" src=`${baseUrl}/whatsapp-icon.svg` alt="Icono de Whatsapp">
     </a>
   </div>
 </div>
 
-<div id="tooltip-whatsapp" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-700 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+<div id="tooltip-whatsapp" role="tooltip" class="absolute z-[999] invisible inline-block px-3 py-2 text-lg font-medium text-white transition-opacity duration-300 bg-gray-700 rounded-lg shadow-lg opacity-0 tooltip dark:bg-gray-700">
   ¡Escribenos!
   <div class="tooltip-arrow" data-popper-arrow/>
 </div>

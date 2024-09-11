@@ -10,19 +10,19 @@ interface Props{
 
 const {title, description, image, reverse, url} = Astro.props
 ---
-<a href={url} class:list={['group flex max-sm:flex-col h-[450px] max-sm:h-[500px] w-[76%] max-sm:w-full bg-white rounded-2xl overflow-hidden duration-1000 border border-gray-200 shadow-md p-0 hover:scale-105 hover:bg-white', !reverse || "flex-row-reverse"]}>
+<a href={url} class:list={['group flex max-lg:flex-col h-[450px] max-sm:h-[500px] max-lg:h-[800px] w-[76%] max-lg:w-full bg-white rounded-2xl overflow-hidden duration-1000 border border-gray-200 shadow-md p-0 hover:scale-105 hover:bg-white', !reverse || "flex-row-reverse"]}>
 
-  <div class='sm:flex-1 h-full max-sm:h-[45%] duration-300 sm:group-hover:flex-none sm:group-hover:w-0'>
+  <div class='lg:flex-1 h-full max-sm:h-[45%] max-lg:h-[60%] duration-300 lg:group-hover:flex-none lg:group-hover:w-0'>
     <img
       class='h-full w-full object-cover'
       src={baseUrl + '/images/'+image}
       alt=''
     />
   </div>
-    <div class="sm:flex-1 max-sm:h-[55%] h-full">
-      <div class="h-full flex flex-col items-center justify-center p-10 max-sm:p-4 gap-6 max-sm:gap-2">
-      <h3 transition:name={'section-title-'+title} class="text-5xl max-sm:text-3xl font-semibold" >{title}</h3>
-      <p class="text-center text-2xl max-sm:text-[1.3rem] font-normal">
+    <div class="lg:flex-1 max-sm:h-[55%] max-lg:h-[40%] h-full">
+      <div class="h-full flex flex-col items-center justify-center p-10 max-sm:p-4 max-lg:p-6 gap-6 max-sm:gap-2 ">
+      <h3 transition:name={'section-title-'+title} class="text-5xl max-sm:text-3xl max-lg:text-5xl  font-semibold" >{title}</h3>
+      <p class="text-center text-2xl max-sm:text-[1.3rem] max-lg:text-3xl font-normal">
         {description}
       </p>
     </div>
