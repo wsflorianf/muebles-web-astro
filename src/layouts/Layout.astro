@@ -5,6 +5,7 @@ import Footer from '@/components/Footer.astro'
 import WhatsappButton from '@/components/WhatsappButton.astro'
 import { ViewTransitions } from 'astro:transitions';
 
+
 interface Props {
   title: string,
   noTransitions?: boolean
@@ -16,14 +17,13 @@ const baseUrl = import.meta.env.BASE_URL
 ---
 
 <html lang='en'>
-  <>
+  <head>
     <meta charset='utf-8' />
     <link rel='icon' type='image/svg+xml' href={baseUrl+'/icon.svg'} />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
     {noTransitions?<></>:<ViewTransitions/>}
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
   </head>
   <body>
     <Header />
@@ -33,6 +33,14 @@ const baseUrl = import.meta.env.BASE_URL
   </body>
   <script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </html>
+
+<script>
+  import { initTooltips } from 'flowbite'
+
+  document.addEventListener('astro:page-load', () => {
+    initTooltips()
+  });
+</script>
 
 <style is:global>
 	:root{
